@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $recommend = "ซื้อเพิ่มอีก " . number_format(500 - $amount, 2) . " บาท รับส่วนลด 5%";
     }
 
-    // ส่วนลดสมาชิก
+    
     $memberDiscount = 0;
     if ($member == "yes" && $amount >= 500) {
         $memberDiscount = 5;
